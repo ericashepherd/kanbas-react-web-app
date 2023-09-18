@@ -1,0 +1,82 @@
+<select>
+    <option>Gradebook</option>
+    <option>Gradebook History</option>
+</select>
+<button>Import</button>
+<select>
+    <option>Export</option>
+    <option>UnPublish</option>
+</select>
+<button>Configure</button>
+
+</br>
+</br>
+<table width="100%">
+    <tr>
+        <td>
+            <h3>Student Names</h3>
+            <input title="Type the name of the student to search for" placeholder="Search Students"/>
+        </td>
+        <td>
+            <h3>Assignment Names</h2>
+            <input title="Type the name of assignment to search for" placeholder="Search Assignments"/>
+        </td>
+    </tr>
+</table>
+
+<br/>
+
+<button>Apply Filters</button>
+
+<table width="100%" border="1">
+    <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>A1 - ENV + HTML <br/> Out of 100</th>
+            <th>A2 - CSS + BOOTSTRAP <br/> Out of 100</th>
+            <th>A3 - JS + REACT <br/> Out of 100</th>
+            <th>A4 - STATE + REDUX <br/> Out of 100</th>
+            <th>A5 - NODE + SESSION <br/> Out of 100</th>
+            <th>A6 - MONGO <br/> Out of 100</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Alice Wonderland</th>
+            <td>100</th>
+            <td>96</th>
+            <td>100</th>
+            <td><input type="number" value=100 min="0" max="100"/></th>
+            <td>98</th>
+            <td>100</th>        
+        </tr>
+        <tr>
+            <td>Princess Leia</th>
+            <td>100</th>
+            <td>100</th>
+            <td><input type="number" value=100 min="0" max="100"/></th>
+            <td>100</th>
+            <td>100</th>
+            <td>100</th>
+        </tr>
+        <tr>
+            <td>Luke Skywalker</th>
+            <td><input type="number" value=100 min="0" max="100"/></th>
+            <td>100</th>
+            <td>100</th>
+            <td>100</th>
+            <td>100</th>
+            <td>100</th> 
+        </tr>
+        <tr>
+            <td>Han Solo</th>
+            <td>100</th>
+            <td><input type="number" value=100 min="0" max="100"/></th>
+            <td>100</th>
+            <td>100</th>
+            <td><input type="number" value=100 min="0" max="100"/></th>
+            <td>100</th>
+        </tr>
+    </tbody>
+    <!--Optional: "<tfoot></tfoot>"-->
+</table>
