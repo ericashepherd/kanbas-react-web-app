@@ -1,327 +1,513 @@
-<table width="100%" border="1">
-    <tr valign="top">
-        <td>
-            <!--Kanbas Navigation-->
-            <ul>
-                <li>
-                    <a href="/Kanbas/Account/Profile/screen.html">Account</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                </li>
-                <li>
-                    <a href="#">Calendar</a>
-                </li>
-                <li>
-                    <a href="#">Inbox</a>
-                </li>
-                <li>
-                    <a href="#">History</a>
-                </li>
-                <li>
-                    <a href="#">Studio</a>
-                </li>
-                <li>
-                    <a href="#">Commons</a>
-                </li>
-                <li>
-                    <a href="#">Help</a>
-                </li>
-            </ul>
-        </td>
-        <td>
-            <!--Course Navigation-->
-            <ul>
-                <li>
-                    <a href="/Kanbas/Courses/Home/screen.html">Home</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
-                </li>
-                <li>
-                    <a href="#">Piazza</a>
-                </li>
-                <li>
-                    <a href="#">Zoom Meetings</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
-                </li>
-                <li>
-                    <a href="#">Quizzes</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
-                </li>
-                <li>
-                    <a href="#">People</a>
-                </li>
-                <li>
-                    <a href="#">Panopto Video</a>
-                </li>
-                <li>
-                    <a href="#">Discussions</a>
-                </li>
-                <li>
-                    <a href="#">Announcements</a>
-                </li>
-                <li>
-                    <a href="#">Pages</a>
-                </li>
-                <li>
-                    <a href="#">Files</a>
-                </li>
-                <li>
-                    <a href="#">Rubrics</a>
-                </li>
-                <li>
-                    <a href="#">Outcomes</a>
-                </li>
-                <li>
-                    <a href="#">Collaborations</a>
-                </li>
-                <li>
-                    <a href="#">Syllabus</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Settings/screen.html">Settings</a>
-                </li>
-            </ul> 
-        </td>
-        <td>
-            <!--Settings-->
-            <table width="100%" border="1">
-                <tr>
-                    <td>
-                        <a href="/Kanbas/Courses/Settings/screen.html">
-                            Course Details
-                        </a>   
-                    </td>
-                    <td>
-                        Sections
-                    </td>
-                    <td>
-                        <a href="/Kanbas/Courses/Settings/Navigation/screen.html">
-                            Navigation
-                        </a>
-                    </td>
-                    <td>
-                        Apps
-                    </td>
-                    <td>
-                        Feature Options
-                    </td>
-                    <td>
-                        Integrations
-                    </td>
-                </tr>
-            </table>
-            <!--Navigation-->
-            Drag and drop items to reorder them in the course navigation.
-            <br/><br/>
-            <table border="1" width="50%">
-                <tr>
-                    <td>Home</td>
-                </tr>
-                <tr>
-                    <td>Modules</td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>Piazza</td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>Zoom Meetings</td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>Assignments</td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>Quizzes</td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>Grades</td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>People</td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>Panopto Video</td><td>⋮</td>
-                </tr>
-            </table>
-            <br/><br/>
-            Drag items here to hide them from students.
-            <br/>
-            <font size="2">Disabling most pages will cause students who visit
-                those pages to be redirected to the course home page.
-            </font>
-            <table border="1" width="50%">
-                <tr>
-                    <td>
-                        Chat
+<html>
+    <head>
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+            rel="stylesheet"/>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            rel="stylesheet"/>
+        <link rel="stylesheet" href="/styles.css"/>
+        <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css"/>
+        <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css"/>
+        <link rel="stylesheet" href="/Kanbas/Courses/Settings/Navigation/index.css"/>
+    </head>
+    <body>
+        <div class="wd-mini-heading d-block d-md-none text-white wd-bg-color-black py-4">
+            <div class="d-flex justify-content-between wd-align-center">
+                <div class="ms-3">
+                    <a href="/Kanbas/KanbasNavigation/screen.html">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+                <div>
+                    <h4>
+                        CS5610.17367.202410
                         <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        SCORM
+                        Settings
+                    </h4>
+                </div>
+                <div class="me-3">
+                    <a href="/Kanbas/Courses/CourseNavigation/screen.html">
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wd-flex-row-container">
+            <div class="wd-bg-color-black d-none d-lg-block">
+                <!--Kanbas Navigation-->
+                <ul class="wd-kanbas-navigation list-group">
+                    <a class="list-group-item"
+                        href="/Kanbas/Dashboard/screen.html">
+                        <img class="img-fluid" 
+                            alt="Responsive image"
+                            src="/images/nulogo.png"/>
+                    </a>
+                    <a class="wd-kanbas-navigation-account list-group-item list-group-item-action"
+                        href="/Kanbas/Account/Profile/screen.html">
+                        <i class="fas fa-user-circle"></i>
                         <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        Attendance
+                        Account
+                    </a>
+                    <a class="list-group-item list-group-item-action"
+                        href="/Kanbas/Dashboard/screen.html">
+                        <i class="fas fa-tachometer-alt"></i>
                         <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        Barnes and Noble Bookstore
+                        Dashboard
+                    </a>
+                    <a class="list-group-item list-group-item-action active"
+                        href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fas fa-book"></i>
                         <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        Digication
+                        Courses
+                    </a>
+                    <a class="list-group-item list-group-item-action"
+                        href="#">
+                        <i class="far fa-calendar-alt" aria-hidden="true"></i>
                         <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        Top Hat
+                        Calendar
+                    </a>
+                    <a class="list-group-item list-group-item-action"
+                        href="#">
+                        <i class="fas fa-inbox"></i>
                         <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        Syllabus
+                        Inbox
+                    </a>
+                    <a class="list-group-item list-group-item-action"
+                        href="#">
+                        <i class="far fa-clock"></i>
                         <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        Perusall
+                        History
+                    </a>
+                    <a class="list-group-item list-group-item-action"
+                        href="#">
+                        <i class="fas fa-sitemap"></i>
                         <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        Microsoft Teams Meetings
+                        Studio
+                    </a>
+                    <a class="list-group-item list-group-item-action"
+                        href="#">
+                        <i class="fas fa-share-square"></i>
                         <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        FACT Reporting and Photo Roster
+                        Commons
+                    </a>
+                    <a class="list-group-item list-group-item-action"
+                        href="#">
+                        <i class="fas fa-question-circle"></i>
                         <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        Progress Reports (Navigate)
-                        <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        Microsoft Teams for Canvas
-                        <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        VHL Central
-                        <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        Gradescope 1.3
-                        <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        Credentials
-                        <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-                <tr>
-                    <td>
-                        iClicker
-                        <br/>
-                        <font size="2">
-                            Page disabled, won't appear in navigation
-                        </font>
-                    </td>
-                    </td><td>⋮</td>
-                </tr>
-            </table>
+                        Help
+                    </a>
+                </ul>
+            </div>
 
-            <br/>
-            <button>Save</button>
-        </td>
-    </tr>
-</table>
+
+            <div class="row wd-flex-grow-1">
+                 <!--Breadcrumb section-->
+                <nav style="--bs-breadcrumb-divider: '>';" 
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><i class="fas fa-bars"></i></li>
+                        <li class="breadcrumb-item">
+                            <a href="/Kanbas/Courses/Home/screen.html">
+                                CS5610.11544.202310
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active" 
+                            aria-current="page">
+                            Settings
+                        </li>
+                    </ol>
+                    <hr/>
+                </nav>
+
+                <div class="wd-flex-row-container wd-flex-grow-1">
+                    <div>
+                        <!--Course Navigation-->
+                        <ul class="wd-course-navigation list-group d-none d-md-block">
+                            <a class="list-group-item list-group-item-action"
+                                href="/Kanbas/Courses/Home/screen.html">Home</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="#">Piazza</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="#">Zoom Meetings</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="#">Quizzes</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="#">People</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="#">Panopto Video</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="#">Discussions</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="#">Announcements</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="#">Pages</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="#">Files</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="#">Rubrics</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="#">Outcomes</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="#">Collaborations</a>
+                            <a class="list-group-item list-group-item-action"
+                                href="#">Syllabus</a>
+                            <a class="list-group-item list-group-item-action active"
+                                href="/Kanbas/Courses/Settings/screen.html">Settings</a>
+                        </ul> 
+                    </div>
+                    <div class="wd-flex-grow-1 ms-2 me-4 mb-4">
+                        <!--Main Content-->                                           
+                        <div class="wd-course-details container wd-red-links ms-2 mt-2">
+                            <!--Nav tab-->
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                <a class="nav-link" href="/Kanbas/Courses/Settings/screen.html">Course Details</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Sections</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link active text-dark" aria-current="page" href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Apps</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Feature Options</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Integrations</a>
+                                </li>
+                            </ul>
+
+                            <!--Course details-->
+                            
+                            <div class="wd-assignments wd-red-links mt-4 ms-0 w-75">
+                                <h5 class="mb-4">Drag and drop items to reorder them in the course navigation.</h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="align-self-center">
+                                            <h5 class="mb-0 ms-3">Home</h5>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Modules</h5>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Piazza</h5>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Zoom Meetings</h5>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Assignments</h5>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Quizzes</h5>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Grades</h5>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">People</h5>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Panopto Video</h5>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                            </ul>
+                            </div>
+
+                            <br/>
+                            
+                            <div class="wd-assignments wd-red-links mt-4 ms-0 w-75">
+                                <h5 class="mt-3">Drag items here to hide them from students.</h5>
+                                <h6>Disabling most pages will cause students who visit
+                                those pages to be redirected to the course home page.</h6>
+                            <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Chat</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">SCORM</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Attendance</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Barnes and Noble Bookstore</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Digication</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Top Hat</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Syllabus</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Perusall</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Microsoft Teams Meetings</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">FACT Reporting and Photo Roster</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Progress Reports (Navigate)</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Microsoft Teams for Canvas</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">VHL Central</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Gradescope 1.3</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">Credentials</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex">
+                                            <div class="flex-fill align-self-center">
+                                                <h5 class="mb-0 ms-3">iClicker</h5>
+                                                <p class="fst-italic ms-5 mb-0 mt-1">
+                                                    Page disabled, won't appear in navigation
+                                                </p>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <i class="fas fa-ellipsis-v ms-3"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <br/>
+                            <button type="button" 
+                                class="wd-red-button btn btn-danger mb-3">
+                                <h5 class="mb-0">Save</h5>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

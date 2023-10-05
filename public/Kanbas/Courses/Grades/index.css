@@ -1,0 +1,39 @@
+.wd-grades .wd-search span{
+    background-color: white;
+    color: gray;
+    border: none;
+}
+
+.wd-grades .wd-search button {
+    background-color: white;
+    color: gray;
+    border: none;
+}
+
+.wd-grades .wd-search input {
+    background-color: white;
+    color: gray;
+    border: none;
+}
+/*
+.wd-grades div.row {
+    max-width: 100%
+}*/
+
+.wd-grades table {
+    border-color: gray;
+}
+
+.wd-grades input {
+    text-align: center;
+    border-radius: 10px;
+}
+
+.wd-grades input {
+    text-align: center;
+    border-radius: 10px;
+}
+
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3), .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control, .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select, .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+    border-radius: 10px;
+}

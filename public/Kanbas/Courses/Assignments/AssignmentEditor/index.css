@@ -1,0 +1,13 @@
+.wd-assignments-editor span.wd-published {
+    color: green;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.wd-assignments-editor span.wd-bold {
+    font-weight: bold;
+}
+
+.wd-assignments-editor * {
+    max-width: 100%;
+}

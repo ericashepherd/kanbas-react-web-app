@@ -1,0 +1,43 @@
+.wd-assignments ul li { 
+    border-left: 5px solid green;
+    font-weight: bold;
+    color: black;
+}
+
+.wd-assignments .list-group { 
+    border-radius: 0;
+}
+
+.wd-assignments i.fa-link {
+    color: mediumseagreen;
+}
+
+.wd-assignments ul li.list-group-item-secondary {
+    border: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+}
+
+.wd-assignments span.border {
+    border-radius:40px;
+}
+
+.wd-assignments i.fa-check-circle {
+    color: green;
+}
+
+.wd-assignments i.fa-edit {
+    color: green;
+}
+
+.wd-assignments i { 
+    vertical-align: middle;
+}
+
+.wd-assignments .wd-larger-text {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.wd-assignments a.wd-assignment-title {
+    color: black;
+}

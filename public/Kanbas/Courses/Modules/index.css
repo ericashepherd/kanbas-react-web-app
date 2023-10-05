@@ -1,0 +1,34 @@
+.wd-modules ul {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.wd-modules ul li { 
+    border-left: 5px solid green;
+    font-weight: bold;
+    color: black;
+}
+
+.wd-modules ul li a { 
+    text-decoration: none;
+    color: red;
+    font-weight: normal;
+}
+
+.wd-modules i.fa-link {
+    color: mediumseagreen;
+}
+
+.wd-modules ul li.list-group-item-secondary {
+    border: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+}
+
+.wd-modules i.fa-check-circle {
+    color: green;
+    padding-top: 3px;
+}
+
+.wd-modules .wd-gray-button i.fa-check-circle {
+    color: mediumseagreen;
+}

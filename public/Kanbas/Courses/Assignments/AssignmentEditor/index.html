@@ -1,138 +1,213 @@
-<select>
-    <option>SpeedGrader</option>
-</select>
-<br/><br/>
-<table width="100%" border="1"><tr></tr></table>
+<link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet"/>
+<link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"/>
+<link rel="stylesheet" href="/styles.css"/>
+<link rel="stylesheet" href="index.css"/>
 
-<h2>
-    <label for="assignmentName">Assignment Name</label>
-</h2>
-<input 
-    value="A1 - ENV + HTML" 
-    id="assignmentName" 
-    placeholder="Assignment Name"
-/>
-<br/><br/>
-<font size="4">Description</font>
-<br/>
-<textarea cols="50" rows="5">This is the assignment description.</textarea>
+<div class="wd-assignments-editor wd-flex-row-container">
+    <div class="ms-auto">
+        <span class="wd-published me-2">
+            <i class="fas fa-check-circle me-1"></i>
+            Published
+        </span>
+        <button type="button" 
+            class="wd-gray-button btn btn-secondary ms-1 h-100">
+            <i class="fas fa-ellipsis-v"></i>
+        </button>
+    </div>
+</div>
+<hr/>
+<div class="wd-assignments-editor align-items-center">
+    <label for="assignmentName" class="form-label">
+        Assignment Name
+    </label>
+    <input id="assignmentName"
+        type="text" class="form-control"
+        value="A1 - ENV + HTML"/> 
+    
+    <br/>
 
-<br/><br/>
-<font size="4">Points</font>
-<br/>
-<input
-    value="100"
-    type="number"
-    max="100"
-    min="0"
-    step="5"
-/>
-<br/><br/>
+    <textarea class="form-control" rows="5">This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.
+    </textarea>
 
-<font size="4">Assignment Group</font>
-<br/>
-<select>
-    <option>ASSIGNMENTS</option>
-</select>
+    <br/>
+    <div class="row">
+        <div class="col-3 pe-0">
+            <label for="points" class="form-label float-end mb-0 mt-1">
+                Points
+            </label>
+        </div>
+        <div class="col-7">
+            <input id="points"
+                type="text" class="form-control"/> 
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-3 pe-0">
+            <label for="assignmentGroup" class="form-label float-end mb-0 mt-1">
+                Assignment Group
+            </label>
+        </div>
+        <div class="col-7">
+            <select id="assignmentGroup"
+                class="form-select">
+                <option selected>ASSIGNMENTS</option>
+                <option>ASSIGNMENTS</option>
+              </select>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-3 pe-0">
+            <label for="displayGrade" class="form-label float-end mb-0 mt-1">
+                Display Grade as
+            </label>
+        </div>
+        <div class="col-7">
+            <select id="displayGrade"
+                class="form-select">
+                <option selected>Percentage</option>
+                <option>Fraction</option>
+            </select>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-3 pe-0">
+        </div>
+        <div class="col-7">
+            <input id="ignoreFinal" class="form-check-input" type="checkbox">
+            <label for="ignoreFinal" class="form-check-label">
+                Do not count this assignment towards the final grade
+            </label>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-3 pe-0">
+            <label for="submissionType" class="form-label float-end mb-0 mt-1">
+                Submission Type
+            </label>
+        </div>
+        <div class="col-7">
+            <div class="border border-light-subtle">
+                <select id="submissionType"
+                    class="form-select w-75 mt-3 ms-3" aria-label="Default select example">
+                    <option selected>Online</option>
+                    <option>Offline</option>
+                </select>
+                <br/>
+                <span class="wd-bold ms-3">Online Entry Options:</span>
+                <div class="form-check ms-3 my-3">
+                    <input id="textEntry"
+                        class="form-check-input" 
+                        type="checkbox" value="" 
+                        checked>
+                    <label for="textEntry" class="form-check-label mb-3">
+                    Text Entry
+                    </label>
+                    <br/>
+                    <input id="webURL"
+                        class="form-check-input" 
+                        type="checkbox" value="" 
+                        checked>
+                    <label for="webURL" class="form-check-label">
+                    Website URL
+                    </label>
+                </div>              
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-3 pe-0">
+            <label for="assign" class="form-label float-end mb-0 mt-1">
+                Assign
+            </label>
+        </div>
+        <div class="col-7">
+            <div class="border border-light-subtle">
+                <br/>
+                <span class="wd-bold ms-3">Assign to</span>
+                <div class="border border-light-subtle mx-3 mt-1">
+                    <span class="badge text-bg-secondary mx-2 my-2">
+                        Everyone
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>     
 
-<br/><br/>
-<font size="4">Display Grade as</font>
-<br/>
-<select>
-    <option>Percentage</option>
-</select>
 
-<br/><br/>
-<font size="4">Submission Type</font>
-<br/>
-<select>
-    <option>Online</option>
-</select>
+                <br/> 
+                <label for="due">
+                    <span class="wd-bold ms-3">Due</span> 
+                </label>
+                <br/>
+                <input type="date"
+                    id="due"
+                    value="2023-09-18"
+                    class="ms-3"/>
+                <br/><br/>
 
-<br/><br/>
-<font size="4">Online Entry Options</font>
-<br/>
-<label>
-    <input type="checkbox" id="textEntry"/> 
-    Text Entry
-</label> <br />
-<label>
-    <input type="checkbox" id="websiteURL" checked /> 
-    Website URL
-</label> <br />
-<label>
-    <input type="checkbox" id="mediaRecordings"/> 
-    Media Recordings
-</label> <br />
-<label>
-    <input type="checkbox" id="studentAnnotation"/> 
-    Student Annotation
-</label> <br />
-<label>
-    <input type="checkbox" id="fileUploads"/> 
-    File Uploads
-</label> <br />
-
-<br/><br/>
-<font size="4">Submission Attempts</font>
-<br/>
-<select>
-    <option>Unlimited</option>
-</select>
-
-<br/><br/>
-<font size="4">Plagiarism Review</font>
-<br/>
-<select>
-    <option>None</option>
-</select>
-
-<br/><br/>
-<font size="4">Group Assignment</font>
-<br/>
-<label>
-    <input type="checkbox" id="groupAssignment"/> 
-    This is a group assignment
-</label>
-
-<br/><br/>
-<font size="4">Peer Reviews</font>
-<br/>
-<label>
-    <input type="checkbox" id="peerReviews"/> 
-    Require Peer Reviews
-</label>
-
-<br/><br/>
-<font size="4">Assign<br/>Assign to</font>
-<br/>
-<input type="text" value="Everyone"/>
-
-<br/><br/>
-<font size="4">Due Date</font>
-<br/>
-<input 
-    type="date" 
-    value="2021-01-01" 
-/>
-
-<br/><br/>
-<font size="4">Available from</font>
-<br/>
-<input 
-    type="date" 
-    value="2021-01-01"
-/>
-
-<br/><br/>
-<font size="4">Until</font>
-<br/>
-<input 
-    type="date" 
-    value="2021-01-01"
-/>
-
-<h2>
-    <a href="/Kanbas/Courses/Assignments/screen.html"><button>Cancel</button></a>
-    <a href="/Kanbas/Courses/Assignments/screen.html"><button>Save</button></a>
-</h2>
+                <div class="row">
+                    <div class="col">
+                        <label for="available">
+                            <span class="wd-bold ms-3">Available from</span> 
+                        </label>
+                        <br/>
+                        <input type="date"
+                            id="available"
+                            value="2023-09-18"
+                            class="ms-3"/>
+                    </div>
+                    <div class="col">
+                        <label for="until">
+                            <span class="wd-bold ms-3">Until</span> 
+                        </label>
+                        <br/>
+                        <input type="date"
+                            id="until"
+                            value="2023-09-18"
+                            class="ms-3"/>
+                    </div>
+                </div>
+    
+                <br/>
+            </div>
+            <div>
+                <button type="button" 
+                    class="wd-gray-button btn btn-secondary w-100">
+                    + Add
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <hr/>
+    <div class="wd-flex-row-container ms-3 mb-3">
+        <div class="flex-fill">
+            <input id="ignoreFinal" class="form-check-input me-2" type="checkbox">
+            <label for="ignoreFinal" class="form-check-label">
+                Notify users that this content has changed
+            </label>
+        </div>
+        <div class="float-end wd-red-links">
+            <a href="/Kanbas/Courses/Assignments/screen.html">
+                <button type="button" 
+                    class="wd-gray-button btn btn-secondary ms-1">
+                    Cancel
+                </button>
+            </a>
+            <a href="/Kanbas/Courses/Assignments/screen.html">
+                <button type="button" 
+                    class="wd-red-button btn btn-danger ms-1">
+                    Save
+                </button>
+            </a>
+        </div>
+    </div>
+    <br/>
+</div>

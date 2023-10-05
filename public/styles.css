@@ -1,0 +1,105 @@
+body {
+    margin: 0px;
+    padding: 0px;   
+}
+
+body * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wd-bg-color-black {
+    background-color: black;
+}
+
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-flex-grow-1 {
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.wd-align-left {
+    text-align: left;
+    align-items: left;
+}
+
+.wd-align-center {
+    text-align: center;
+    align-items: center;
+}
+
+.wd-text-align-justify {
+    text-align: center;
+}
+
+.wd-remove-padding-left {
+    padding-left: 0px;
+}
+
+.wd-remove-padding-right {
+    padding-right: 0px;
+}
+
+.wd-flex-grow-1 nav {
+    font-size: 1.3em;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-right: 40px;
+}
+
+.wd-flex-grow-1 nav ol * {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-flex-grow-1 nav i {
+    padding-right: 30px;
+}
+
+.wd-flex-grow-1 nav .breadcrumb li.active {
+    color: black;
+}
+
+.wd-flex-row-container div.row.wd-flex-grow-1{
+    margin-right: 50px;
+}
+
+.wd-red-button.btn {
+    background-color: red;
+    border-color: red;
+    color: white;
+    border-radius: 4px;
+}
+
+.wd-gray-button.btn{
+    background-color: whitesmoke;
+    border-color: lightgray;
+    color: black;
+    border-radius: 4px;
+}
+
+.wd-flex-row-container div.row.wd-flex-grow-1 {
+    margin-right: 30px;
+}
+
+.wd-red-links a {
+    text-decoration: none;
+    color: red;
+}
+
+.wd-flex-justify-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-mini-heading a {
+    text-decoration: none;
+    color: white;
+}
+
+.wd-mini-heading i {
+    font-size: 1.3em;
+}
