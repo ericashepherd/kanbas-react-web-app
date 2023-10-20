@@ -1,0 +1,32 @@
+.wd-course-status.container {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7em;
+    width: 270px;
+    padding-right: 15px;
+}
+
+.wd-course-status .row {
+    margin: 0;
+}
+
+.wd-course-status a {
+    text-decoration: none;
+    color: red;
+}
+
+.wd-course-status .list-group a {
+    font-size: 1.3em;
+}
+
+.wd-course-status .list-group i {
+    font-size: 1.5em;
+}
+
+.wd-course-status .float-end a {
+    font-size: 0.6em;
+}
+
+.wd-course-status .list-group * {
+    border: 0;
+}

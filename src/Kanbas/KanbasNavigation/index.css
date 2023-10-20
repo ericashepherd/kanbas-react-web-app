@@ -1,0 +1,52 @@
+.wd-kanbas-navigation .wd-icon {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.wd-kanbas-navigation .list-group-item:first-child,
+.wd-kanbas-navigation .list-group-item:last-child,
+.wd-kanbas-navigation .list-group-item.active:last-child,
+.wd-kanbas-navigation.list-group {
+  border-radius: 0px;
+}
+
+.wd-kanbas-navigation {
+  background-color: black;
+  list-style: none;
+  padding: 0px;
+  width: 80px;
+  margin: 0px;
+  border-radius: 0;
+}
+
+.wd-kanbas-navigation a {
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border: none;
+}
+
+.wd-kanbas-navigation a.active {
+  color: red;
+  background-color: white;
+}
+
+.wd-kanbas-navigation a.active .wd-icon-account {
+  color: gray;
+}
+
+.wd-kanbas-navigation .img-fluid {
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 0.5em;
+}
+
+/* .wd-kanbas-navigation a i {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+} */

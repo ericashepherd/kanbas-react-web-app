@@ -1,0 +1,42 @@
+.wd-modules.ul {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.wd-modules ul li { 
+    border-left: 5px solid green;
+    color: black;
+}
+
+.wd-modules ul li a { 
+    text-decoration: none;
+    color: red;
+    font-weight: normal;
+}
+
+.wd-modules ul li.list-group-item-secondary {
+    border: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+}
+
+.wd-modules .list-group-item-secondary {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+}
+
+.wd-modules h3 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.wd-modules p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.wd-modules h6 {
+    font-weight: bold;
+    padding-left: 10px;
+}
