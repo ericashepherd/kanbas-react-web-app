@@ -1,8 +1,20 @@
 import {AiOutlineCheckCircle} from "react-icons/ai"
 import {BiDotsVerticalRounded} from "react-icons/bi"
 import "./index.css";
+import { useSelector, useDispatch } from "react-redux";
+import { useParams } from "react-router-dom";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 
 function ModuleButtons() {
+    const { courseId } = useParams();
+    const modules = useSelector((state) => state.modulesReducer.modules);
+    const module = useSelector((state) => state.modulesReducer.module);
+    const dispatch = useDispatch();
     return(
         <div>
             <div class="wd-modules wd-flex-row-container flex-row-reverse mt-3">
