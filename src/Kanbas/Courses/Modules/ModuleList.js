@@ -43,7 +43,7 @@ function ModuleList() {
 
   const handleUpdateModule = () => {
     client.updateModule(module).then((status) => {
-      dispatch(addModule(module));
+      dispatch(updateModule(module));
     });
   };
 
