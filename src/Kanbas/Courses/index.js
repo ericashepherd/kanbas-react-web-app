@@ -1,5 +1,7 @@
 import React from "react";
 import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import axios from "axios";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
@@ -9,11 +11,22 @@ import Grades from "./Grades";
 import {HiBars3} from "react-icons/hi2"
 import "../../styles.css";
 
-function Courses({ courses }) {
+function Courses() {
   const { courseId } = useParams();
+  const URL = 'https://kanbas-node-server-app-fdd0.onrender.com/api/courses';
   const {pathname} = useLocation();
   const [empty, kanbas, coursesP, id, screen] = pathname.split("/");
-  const course = courses.find((course) => course._id === courseId);
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   return (
     <div className="wd-courses">
       <h4 className="wd-red mt-3 ms-3 align-items-center">
