@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import * as client from "./client";
-import * as courseClient from "../courses/client";
+//import * as courseClient from "../courses/client";
 
 function Account() {
   const { id } = useParams();
+  /*
   const [courses, setCourses] = useState([]);
   const fetchCourses = async () => {
     const courses = await courseClient.findCoursesByAuthor(id);
     setCourses(courses);
   };
+  */
   const signout = async () => {
     await client.signout();
     navigate("/project/signin");
