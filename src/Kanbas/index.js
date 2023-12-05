@@ -14,7 +14,8 @@ import "../styles.css";
 
 function Kanbas() {
   const [courses, setCourses] = useState([]);
-  const URL = "https://kanbas-node-server-app-fdd0.onrender.com/api/courses";
+  const API_BASE =  `${process.env.REACT_APP_API_URL}/api`;
+  const URL = `${API_BASE}/courses`;
   const findAllCourses = async () => {
     const response = await axios.get(URL);
     setCourses(response.data);
